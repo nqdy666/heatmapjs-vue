@@ -1,5 +1,13 @@
 # heatmapjs-vue 
 
+heatmapjs component for Vue.js.
+
+#### Features
+- IE11+
+
+## Documentation
+- **[Demo & Docs](https://nqdy666.github.io/heatmapjs-vue/)**
+
 ## Install
 
 #### NPM
