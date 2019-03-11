@@ -1,0 +1,52 @@
+module.exports = {
+  srcDir: __dirname,
+  server: {
+    port: 3001 // default: 3000
+  },
+  build: {
+    extractCSS: true,
+    cssSourceMap: true,
+    // postcss: [],
+    extend (config) {
+      config.devtool = 'source-map'
+    }
+  },
+
+  loading: {
+    color: '#59cc93'
+  },
+
+  manifest: {
+    name: 'heatmapjs vue',
+    description: 'heatmapjs with Vue.js',
+    theme_color: '#563d7c'
+  },
+
+  plugins: [{
+    src: '~plugins/heatmapjs-vue.js',
+    ssr: false
+  },{
+    src: '~plugins/json-editor.js',
+    ssr: false
+  }],
+
+  modules: [
+    '@nuxtjs/pwa'
+  ],
+
+  head: {
+    title: '',
+    meta: [{
+      charset: 'utf-8'
+    },
+    {
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1, maximum-scale=1'
+    }
+    ],
+    script: []
+  },
+  css: [
+    '~assets/css/app.scss'
+  ]
+}
