@@ -85,7 +85,7 @@ If you use the window system, you can't execute directly `npm run release`, you 
 ## Donation
 If you find it useful, you can buy us a cup of coffee.
 
-<img width="650" src="https://github.com/heatmapjs-vue/docs/assets/images/qrcode-donation.png" alt="donation">
+<img width="650" src="https://raw.githubusercontent.com/nqdy666/heatmapjs-vue/master/docs/assets/images/qrcode-donation.png" alt="donation">
 
 ## License
 
