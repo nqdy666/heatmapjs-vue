@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-DEPLOY_ENV=GH_PAGES
+export DEPLOY_ENV=GH_PAGES
 
 npm run docs-gen
 
