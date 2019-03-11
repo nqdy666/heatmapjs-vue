@@ -1,9 +1,9 @@
-# heatmapjs-vue 
+# heatmapjs-vue
 
 heatmapjs component for Vue.js.
 
 #### Features
-- IE11+
+- IE10+
 
 ## Documentation
 - **[Demo & Docs](https://nqdy666.github.io/heatmapjs-vue/)**
@@ -89,6 +89,13 @@ $ npm run release
 $ git push --follow-tags origin dev && npm publish
 ```
 If you use the window system, you can't execute directly `npm run release`, you need to install git bash software, and then use git bash to execute the command `./scripts/build` and `npm run release:only`.
+
+docs-publish
+```bash
+$ npm install -g gh-pages
+$ npm run docs-publish
+```
+If you use the window system, you can't execute directly `npm run docs-publish`, you need to install git bash software, and then use git bash to execute the command `./scripts/docs-publish`.
 
 ## Donation
 If you find it useful, you can buy us a cup of coffee.
