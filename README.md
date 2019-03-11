@@ -78,14 +78,14 @@ publish
 $ npm install -g babel-cli
 $ npm i rollup -g
 $ npm run release
-$ git push --follow-tags origin master && npm publish
+$ git push --follow-tags origin dev && npm publish
 ```
 If you use the window system, you can't execute directly `npm run release`, you need to install git bash software, and then use git bash to execute the command `./scripts/build` and `npm run release:only`.
 
 ## Donation
 If you find it useful, you can buy us a cup of coffee.
 
-<img width="650" src="https://raw.githubusercontent.com/nqdy666/heatmapjs-vue/master/docs/assets/images/qrcode-donation.png" alt="donation">
+<img width="650" src="https://raw.githubusercontent.com/nqdy666/heatmapjs-vue/dev/docs/assets/images/qrcode-donation.png" alt="donation">
 
 ## License
 
