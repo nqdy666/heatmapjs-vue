@@ -1,4 +1,10 @@
-module.exports = {
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/heatmapjs-vue/'
+  }
+} : {}
+
+module.exports = Object.assign(routerBase, {
   srcDir: __dirname,
   server: {
     port: 3001 // default: 3000
@@ -53,4 +59,4 @@ module.exports = {
   css: [
     '~assets/css/app.scss'
   ]
-}
+})

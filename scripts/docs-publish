@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
+DEPLOY_ENV=GH_PAGES
+
 npm run docs-gen
 
 git config --global user.email nianqin.vip@gmail.com
