@@ -20,6 +20,10 @@ workbox.precaching.precacheAndRoute([
     "revision": "632233ffa8b098a4f4e01f8a7a379751"
   },
   {
+    "url": "/heatmapjs-vue/_nuxt/61e40766e3e290b3a370.js",
+    "revision": "86e41024e6173bfdea177fe3e3eb2222"
+  },
+  {
     "url": "/heatmapjs-vue/_nuxt/7af70792408909b3e930.css",
     "revision": "28930deda4bd181a95832503d5570b9f"
   },
@@ -34,10 +38,6 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "/heatmapjs-vue/_nuxt/df327ba4b856fca31225.js",
     "revision": "ac5ef15def041d3842a1e73c74ae40e6"
-  },
-  {
-    "url": "/heatmapjs-vue/_nuxt/e7abe993afc3631e5a4b.js",
-    "revision": "2a8ed14bc6dec9630ee8520b915114dc"
   },
   {
     "url": "/heatmapjs-vue/_nuxt/ff1b3c75f88dfbdbd273.js",
