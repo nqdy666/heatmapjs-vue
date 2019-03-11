@@ -1,17 +1,20 @@
 <template>
   <div class="heatmapjs-wrapper layout-lr">
-    <heatmapjs-vue
-      :max="max"
-      :min="min"
-      :data="data"
-      :options="options"
-      :move-drawable="moveDrawable"
-      :click-drawable="clickDrawable"
-      :draw-value="drawValue" class="hmp-container">
-      <div class="hmp-content">
-        <p>heatmapjs-vue</p>
-      </div>
-    </heatmapjs-vue>
+    <no-ssr>
+      <heatmapjs-vue
+        :max="max"
+        :min="min"
+        :data="data"
+        :options="options"
+        :move-drawable="moveDrawable"
+        :click-drawable="clickDrawable"
+        :draw-value="drawValue"
+        @change="handleChange" class="hmp-container">
+        <div class="hmp-content">
+          <p>heatmapjs-vue</p>
+        </div>
+      </heatmapjs-vue>
+    </no-ssr>
     <div class="hmp-prop">
       <label><p>data max(max)：</p>
         <input type="number" v-model="max"/>
