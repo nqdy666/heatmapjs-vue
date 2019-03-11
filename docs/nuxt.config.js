@@ -18,8 +18,12 @@ module.exports = {
 
   manifest: {
     name: 'heatmapjs vue',
-    description: 'heatmapjs with Vue.js',
+    description: 'heatmapjs component for Vue.js',
     theme_color: '#563d7c'
+  },
+
+  generate: {
+    dir: 'docs-dist'
   },
 
   plugins: [{

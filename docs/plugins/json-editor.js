@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import HeatmapjsVue from '../../src'
+import vueJsonEditor from 'vue-json-editor'
 
-Vue.use(HeatmapjsVue)
+Vue.component('vue-json-editor', vueJsonEditor)

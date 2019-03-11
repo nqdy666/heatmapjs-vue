@@ -7,8 +7,7 @@
       :options="options"
       :move-drawable="moveDrawable"
       :click-drawable="clickDrawable"
-      :draw-value="drawValue"
-      @change="handleChange" class="hmp-container">
+      :draw-value="drawValue" class="hmp-container">
       <div class="hmp-content">
         <p>heatmapjs-vue</p>
       </div>

@@ -91,4 +91,4 @@ If you find it useful, you can buy us a cup of coffee.
 
 [MIT](https://github.com/nianqin/heatmapjs-vue/blob/master/LICENSE.md)
 
-Copyright (c) 2018-present, Qin Nian
+Copyright (c) 2019-present, Qin Nian

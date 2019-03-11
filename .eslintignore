@@ -1,2 +1,5 @@
 sw.js
 detect-element-resize.js
+docs-dist/
+es/
+dist/
