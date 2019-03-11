@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-yarn docs-gen
+npm run docs-gen
 
 git config --global user.email nianqin.vip@gmail.com
 git config --global user.name nianqin
