@@ -66,6 +66,9 @@ You may now use the component in your markup
 <heatmapjs-vue class="heatmapjs-container" :max="100" :min="0" :data="[{ x: 10, y: 15, value: 5}]"></heatmapjs-vue>
 ```
 
+#### typescript
+**[heatmapjs-vue-ts-example](https://github.com/nqdy666/heatmapjs-vue-ts-example)**
+
 ## Using the component
 
 ### Props *(all reactive)*
