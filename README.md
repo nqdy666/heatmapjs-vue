@@ -3,12 +3,12 @@
 heatmapjs component for Vue.js.
 
 #### Features
-- IE10+
+- IE9+
 
 ## Documentation
 - **[Demo](https://nqdy666.github.io/heatmapjs-vue/)**
 - **[例子](https://nqdy666.github.io/heatmapjs-vue/cn/)**
-
+- **[Example on JSBin](https://jsbin.com/quwakos/1/edit?html,css,js,output)**
 ## Install
 
 #### NPM
