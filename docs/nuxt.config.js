@@ -7,6 +7,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 module.exports = Object.assign(routerBase, {
   srcDir: __dirname,
   server: {
+    host: '0.0.0.0',
     port: 3001 // default: 3000
   },
   build: {
