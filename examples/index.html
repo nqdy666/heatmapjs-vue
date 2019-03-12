@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>example</title>
+  <style>
+    body {
+      background: #ffecd2;
+    }
+    .heatmapjs-container {
+      width: 1000px;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+      <heatmapjs-vue
+        class="heatmapjs-container"
+        :max="max"
+        :min="min"
+        :data="data"
+        :options="options"
+        :move-drawable="moveDrawable"
+        :click-drawable="clickDrawable"
+        :draw-value="drawValue"
+        @change="handleChange"></heatmapjs-vue>
+  </div>
+  <script src="https://unpkg.com/vue@2.6.8"></script>
+  <script src="https://unpkg.com/heatmap.js@2.0.5/build/heatmap.min.js"></script>
+  <script src="https://unpkg.com/heatmapjs-vue@latest/dist/heatmapjs-vue.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        max: 100,
+        min: 0,
+        data: [{ x: 10, y: 15, value: 5}],
+        moveDrawable: true,
+        clickDrawable: true,
+        drawValue: 5,
+        options: {
+          backgroundColor: 'white'
+        },
+      },
+      methods: {
+        handleChange: function (val) {
+          this.data = val
+        }
+      }
+    })
+  </script>
+</body>
+</html>

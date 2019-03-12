@@ -66,10 +66,10 @@ export default {
   mounted () {
     const $heatmapContainer = this.$el
     this.heatmap = h337.create({
-      ...this.mOptions,
-      container: $heatmapContainer,
       width: this.$el.clientWidth || 1,
-      height: this.$el.clientHeight || 1
+      height: this.$el.clientHeight || 1,
+      ...this.mOptions,
+      container: $heatmapContainer
     })
     this.heatmap.setData({
       max: this.max,
@@ -103,9 +103,9 @@ export default {
     _handleResize () {
       if (!this.$el) return
       this.heatmap.configure({
-        ...this.mOptions,
         width: this.$el.clientWidth || 1,
-        height: this.$el.clientHeight || 1
+        height: this.$el.clientHeight || 1,
+        ...this.mOptions,
       })
     },
     _draw: debounce(function (e, type) {

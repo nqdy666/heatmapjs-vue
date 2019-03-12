@@ -26,7 +26,7 @@ if (!fs.existsSync(dist)) {
 // since they are expected to be provided later.
 // We want to include some of them in the build, so we exclude it here.
 const externalExcludes = [
-  'heatmap.js',
+  // 'heatmap.js',
   'lodash.debounce'
 ]
 
