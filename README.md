@@ -4,11 +4,14 @@ heatmapjs component for Vue.js.
 
 #### Features
 - IE9+
+- Support Typescript
+- Auto resize
 
 ## Documentation
 - **[Demo](https://nqdy666.github.io/heatmapjs-vue/)**
 - **[例子](https://nqdy666.github.io/heatmapjs-vue/cn/)**
 - **[Example on JSBin](https://jsbin.com/quwakos/1/edit?html,css,js,output)**
+
 ## Install
 
 #### NPM
@@ -29,7 +32,13 @@ Vue.use(heatmapjsVue)
 You may now use the component in your markup
 
 ```html
-<heatmapjs-vue :max="100" :min="0" :data="[{ x: 10, y: 15, value: 5}]"></heatmapjs-vue>
+<style>
+  .heatmapjs-container {
+    width: 1000px;
+    height: 500px;
+  }
+</style>
+<heatmapjs-vue class="heatmapjs-container" :max="100" :min="0" :data="[{ x: 10, y: 15, value: 5}]"></heatmapjs-vue>
 ```
 
 #### CDN
