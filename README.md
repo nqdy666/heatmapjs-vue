@@ -34,20 +34,27 @@ You may now use the component in your markup
 
 #### CDN
 
-Just include `vue` & `heatmapjs-vue.js` - I recommend using [unpkg](https://unpkg.com/#/).
+Just include `vue` 、`heatmap.js`、 `heatmapjs-vue.js` - I recommend using [unpkg](https://unpkg.com/#/).
 
 ```html
 <script src="https://unpkg.com/vue@latest"></script>
+<script src="https://unpkg.com/heatmap.js@2.0.5/build/heatmap.min.js"></script>
 <!-- use the latest release -->
 <script src="https://unpkg.com/heatmapjs-vue@latest"></script>
 <!-- or point to a specific release -->
-<script src="https://unpkg.com/heatmapjs-vue@0.0.3"></script>
+<script src="https://unpkg.com/heatmapjs-vue@0.0.4"></script>
 ```
 
 You may now use the component in your markup
 
 ```html
-<heatmapjs-vue :max="100" :min="0" :data="[{ x: 10, y: 15, value: 5}]"></heatmapjs-vue>
+<style>
+  .heatmapjs-container {
+    width: 1000px;
+    height: 500px;
+  }
+</style>
+<heatmapjs-vue class="heatmapjs-container" :max="100" :min="0" :data="[{ x: 10, y: 15, value: 5}]"></heatmapjs-vue>
 ```
 
 ## Using the component
