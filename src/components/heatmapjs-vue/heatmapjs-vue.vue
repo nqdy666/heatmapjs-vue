@@ -113,9 +113,10 @@ export default {
       if ((type === 'mousemove' || type === 'touchmove') && !this.moveDrawable) return
       let x = e.layerX
       let y = e.layerY
-      if (e.touches) {
-        x = e.touches[0].pageX
-        y = e.touches[0].pageY
+      if (e.touches && this.$el) {
+        const { offsetLeft = 0, offsetTop = 0 } = this.$el
+        x = e.touches[0].pageX - offsetLeft
+        y = e.touches[0].pageY - offsetTop
       }
       const xField = this.mOptions['xField'] || 'x'
       const yField = this.mOptions['yField'] || 'y'
