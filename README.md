@@ -93,6 +93,9 @@ You may now use the component in your markup
 * `getDataURL`
 * `repaint`
 
+### Events
+* `change`
+
 ## Local development
 
 development
