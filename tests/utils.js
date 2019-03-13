@@ -1,5 +1,9 @@
-import { readFileSync } from 'fs'
-import { resolve } from 'path'
+import {
+  readFileSync
+} from 'fs'
+import {
+  resolve
+} from 'path'
 import heatmapjsVue from '../src'
 
 const VUE_VERSION = process.env.VUE_VERSION ? 'vue-' + process.env.VUE_VERSION : 'vue'
@@ -13,7 +17,7 @@ Vue.config.productionTip = false
 window.Vue = Vue
 Vue.use(heatmapjsVue)
 
-export function loadFixture (dirName, name) {
+export function loadFixture(dirName, name) {
   const fixtureBase = resolve(dirName, 'fixtures')
   const template = readFileSync(resolve(fixtureBase, name + '.html'), 'UTF-8')
   const js = readFileSync(resolve(fixtureBase, name + '.js'), 'UTF-8')
@@ -31,25 +35,25 @@ export function loadFixture (dirName, name) {
   }
 }
 
-export async function testVM () {
+export async function testVM() {
   it(`vm mounts`, async () => {
     return expect(window.app.$el).toBeDefined()
   })
 }
 
-export function nextTick () {
+export function nextTick() {
   return new Promise((resolve, reject) => {
     Vue.nextTick(resolve)
   })
 }
 
-export async function setData (app, key, value) {
+export async function setData(app, key, value) {
   app[key] = value
   await nextTick()
 }
 
 // Usage: await sleep(1000);
-export function sleep (ms) {
+export function sleep(ms) {
   ms = ms || 0
   return new Promise((resolve, reject) => setTimeout(resolve, ms))
 }
@@ -104,9 +108,9 @@ const elHasClass = (el, className) => {
  * @return {boolean}
  */
 const hasClass = (node, className) =>
-  isVueInstance(node)
-    ? vmHasClass(node, className)
-    : elHasClass(node, className)
+  isVueInstance(node) ?
+  vmHasClass(node, className) :
+  elHasClass(node, className)
 
 const getVmTag = vm => vm.$options._componentTag
 const getHTMLTag = el => String(el.tagName).toLowerCase()
@@ -115,14 +119,14 @@ const getTagName = node =>
 
 // Extend Jest marchers
 expect.extend({
-  toHaveClass (node, className) {
+  toHaveClass(node, className) {
     return {
       message: () =>
         `expected <${getTagName(node)}> to have class '${className}'`,
       pass: hasClass(node, className)
     }
   },
-  toHaveAllClasses (node, classList) {
+  toHaveAllClasses(node, classList) {
     throwIfNotArray(classList)
 
     let pass = true
@@ -149,7 +153,7 @@ expect.extend({
       pass
     }
   },
-  toBeComponent (vm, componentTag) {
+  toBeComponent(vm, componentTag) {
     throwIfNotVueInstance(vm)
 
     return {
@@ -158,7 +162,7 @@ expect.extend({
       pass: getVmTag(vm) === componentTag
     }
   },
-  toBeElement (el, tagName) {
+  toBeElement(el, tagName) {
     throwIfNotHTMLElement(el)
 
     return {
@@ -170,3 +174,4 @@ expect.extend({
     }
   }
 })
+
