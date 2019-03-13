@@ -2,7 +2,7 @@
 
 > heatmapjs component for Vue.js.
 
-> [🇨🇳 中文版](./README.zh_CN.md)
+> [CN 中文版](./README.zh_CN.md)
 
 Built upon [heatmap.js](https://www.patrick-wied.at/static/heatmapjs/) v2.0.5+ and depends on [Vue.js](https://vuejs.org/) v2.2.6+.
 
