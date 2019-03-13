@@ -147,6 +147,7 @@ publish
 ```bash
 $ npm install -g babel-cli
 $ npm i rollup -g
+$ chmod a+x scripts/build
 $ npm run release
 $ git push --follow-tags origin dev && npm publish
 ```
@@ -155,6 +156,7 @@ If you use the window system, you can't execute directly `npm run release`, you 
 docs-publish
 ```bash
 $ npm install -g gh-pages
+$ chmod a+x scripts/docs-publish
 $ npm run docs-publish
 ```
 If you use the window system, you can't execute directly `npm run docs-publish`, you need to install git bash software, and then use git bash to execute the command `./scripts/docs-publish`.

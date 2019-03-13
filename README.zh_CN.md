@@ -147,6 +147,7 @@ $ npm run docs-dev
 ```bash
 $ npm install -g babel-cli
 $ npm i rollup -g
+$ chmod a+x scripts/build
 $ npm run release
 $ git push --follow-tags origin dev && npm publish
 ```
@@ -155,11 +156,12 @@ $ git push --follow-tags origin dev && npm publish
 文档发布
 ```bash
 $ npm install -g gh-pages
+$ chmod a+x scripts/docs-publish
 $ npm run docs-publish
 ```
 如果您使用windows系统，您不能直接执行`npm run docs-publish`，您需要安装git bash软件，然后使用git bash执行`./scripts/docs-publish`命令。
 
-## 赞助
+## 捐赠
 如果你觉得有用，你可以请我们喝杯咖啡。
 
 <img width="650" src="https://raw.githubusercontent.com/nqdy666/heatmapjs-vue/dev/docs/assets/images/qrcode-donation.png" alt="donation">
