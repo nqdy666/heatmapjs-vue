@@ -12,16 +12,16 @@ workbox.precaching.precacheAndRoute([
     "revision": "80aa0e3ff7a6bf4c8db1ba774665e302"
   },
   {
+    "url": "/heatmapjs-vue/_nuxt/4e87b746d81cc309d08d.js",
+    "revision": "fabf6be2cae800a17a9dfe40f7a710f2"
+  },
+  {
     "url": "/heatmapjs-vue/_nuxt/54d7e03a0e50a8ea6819.js",
     "revision": "c4a081f2ff6fb479cf3d04c14221513e"
   },
   {
     "url": "/heatmapjs-vue/_nuxt/5f890d221c065cf056f1.css",
     "revision": "632233ffa8b098a4f4e01f8a7a379751"
-  },
-  {
-    "url": "/heatmapjs-vue/_nuxt/61e40766e3e290b3a370.js",
-    "revision": "86e41024e6173bfdea177fe3e3eb2222"
   },
   {
     "url": "/heatmapjs-vue/_nuxt/7af70792408909b3e930.css",
