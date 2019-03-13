@@ -1,6 +1,6 @@
 {
   "name": "heatmapjs-vue",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "heatmapjs component from vue",
   "main": "dist/heatmapjs-vue.common.js",
   "types": "src/index.d.ts",
@@ -101,7 +101,9 @@
   "jest": {
     "verbose": true,
     "testURL": "http://localhost/",
-    "setupFiles": ["jest-canvas-mock"],
+    "setupFiles": [
+      "jest-canvas-mock"
+    ],
     "testRegex": "spec.js$",
     "moduleFileExtensions": [
       "js",
