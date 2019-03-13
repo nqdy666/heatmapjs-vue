@@ -91,11 +91,11 @@ You may now use the component in your markup
 
 * `min` (default: `0`)
   
-  the upper bound of your dataset
+  the lower bound of your dataset
   
 * `max` (default: `100`)
 
-  the lower bound of your dataset
+  the upper bound of your dataset
   
 * `data` (default: `[]`)
 
@@ -133,7 +133,7 @@ For further details, see [heatmap.js' API documentation](https://www.patrick-wie
 ### Events
 * `change`
 
-  triggered when data changes due to a click or move and The first parameter emit is the latest dataset
+  triggered when data changes due to a click or move and the first parameter emit is the latest dataset
 
 ## Local development
 
