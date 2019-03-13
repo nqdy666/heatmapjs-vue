@@ -32,10 +32,10 @@ export function registerComponents (Vue, components) {
  * @param {object} Directive definition
  */
 export function registerDirective (Vue, name, def) {
-  Vue._fc_vue_directives_ = Vue._fc_vue_directives_ || {}
-  const loaded = Vue._fc_vue_directives_[name]
+  Vue._hm_vue_directives_ = Vue._hm_vue_directives_ || {}
+  const loaded = Vue._hm_vue_directives_[name]
   if (!loaded && def && name) {
-    Vue._fc_vue_directives_[name] = true
+    Vue._hm_vue_directives_[name] = true
     Vue.directive(name, def)
   }
   return loaded
