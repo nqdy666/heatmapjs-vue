@@ -54,7 +54,7 @@ You may now use the component in your markup
 include `vue` 、`heatmap.js`、 `heatmapjs-vue.js`、`heatmapjs-vue.css` - I recommend using [unpkg](https://unpkg.com/#/).
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/heatmapjs-vue@0.0.4/dist/heatmapjs-vue.css"/>
+<link rel="stylesheet" href="https://unpkg.com/heatmapjs-vue@0.0.5/dist/heatmapjs-vue.css"/>
 <style>
   .heatmapjs-container {
     width: 1000px;
@@ -69,7 +69,7 @@ include `vue` 、`heatmap.js`、 `heatmapjs-vue.js`、`heatmapjs-vue.css` - I re
 <!-- use the latest release -->
 <script src="https://unpkg.com/heatmapjs-vue@latest"></script>
 <!-- or point to a specific release -->
-<script src="https://unpkg.com/heatmapjs-vue@0.0.4"></script>
+<script src="https://unpkg.com/heatmapjs-vue@0.0.5"></script>
 ```
 
 You may now use the component in your markup

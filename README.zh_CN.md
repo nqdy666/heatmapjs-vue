@@ -54,7 +54,7 @@ Vue.use(heatmapjsVue)
 包含 `vue` 、`heatmap.js`、 `heatmapjs-vue.js`、`heatmapjs-vue.css` - 我推荐使用 [unpkg](https://unpkg.com/#/).
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/heatmapjs-vue@0.0.4/dist/heatmapjs-vue.css"/>
+<link rel="stylesheet" href="https://unpkg.com/heatmapjs-vue@0.0.5/dist/heatmapjs-vue.css"/>
 <style>
   .heatmapjs-container {
     width: 1000px;
@@ -69,7 +69,7 @@ Vue.use(heatmapjsVue)
 <!-- 使用最新版本 -->
 <script src="https://unpkg.com/heatmapjs-vue@latest"></script>
 <!-- 或指定某一个版本 -->
-<script src="https://unpkg.com/heatmapjs-vue@0.0.4"></script>
+<script src="https://unpkg.com/heatmapjs-vue@0.0.5"></script>
 ```
 
 现在可以使用该组件
