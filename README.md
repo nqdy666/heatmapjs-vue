@@ -1,6 +1,10 @@
 # heatmapjs-vue
 
-heatmapjs component for Vue.js.
+> heatmapjs component for Vue.js.
+
+> [🇨🇳 中文版](./README.zh_CN.md)
+
+Built upon [heatmap.js](https://www.patrick-wied.at/static/heatmapjs/) v2.0.5+ and depends on [Vue.js](https://vuejs.org/) v2.2.6+.
 
 #### Features
 - IE9+
@@ -10,7 +14,7 @@ heatmapjs component for Vue.js.
 ## Documentation
 - **[Demo](https://nqdy666.github.io/heatmapjs-vue/)**
 - **[例子](https://nqdy666.github.io/heatmapjs-vue/cn/)**
-- **[Example on JSBin](https://jsbin.com/quwakos/1/edit?html,css,js,output)**
+- **[Example on JSBin](https://jsbin.com/quwakos/edit?html,css,js,output)**
 
 ## Install
 
@@ -43,7 +47,17 @@ You may now use the component in your markup
 
 #### CDN
 
-Just include `vue` 、`heatmap.js`、 `heatmapjs-vue.js` - I recommend using [unpkg](https://unpkg.com/#/).
+include `vue` 、`heatmap.js`、 `heatmapjs-vue.js`、`heatmapjs-vue.css` - I recommend using [unpkg](https://unpkg.com/#/).
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/heatmapjs-vue@0.0.4/dist/heatmapjs-vue.css"/>
+<style>
+  .heatmapjs-container {
+    width: 1000px;
+    height: 500px;
+  }
+</style>
+```
 
 ```html
 <script src="https://unpkg.com/vue@latest"></script>
@@ -57,12 +71,7 @@ Just include `vue` 、`heatmap.js`、 `heatmapjs-vue.js` - I recommend using [un
 You may now use the component in your markup
 
 ```html
-<style>
-  .heatmapjs-container {
-    width: 1000px;
-    height: 500px;
-  }
-</style>
+
 <heatmapjs-vue class="heatmapjs-container" :max="100" :min="0" :data="[{ x: 10, y: 15, value: 5}]"></heatmapjs-vue>
 ```
 
@@ -72,29 +81,55 @@ You may now use the component in your markup
 ## Using the component
 
 ### Props *(all reactive)*
-* `options`
+* `options` (default: `{}`)
 
-* `min`
+  For further details, see [heatmap.js' API documentation](https://www.patrick-wied.at/static/heatmapjs/docs.html)
 
-* `max`
+* `min` (default: `0`)
+  
+  the upper bound of your dataset
+  
+* `max` (default: `100`)
 
-* `data`
+  the lower bound of your dataset
+  
+* `data` (default: `[]`)
 
-* `clickDrawable`
+  dataset
+  ```
+  var dataPoint = { 
+    x: 5, // x coordinate of the datapoint, a number 
+    y: 5, // y coordinate of the datapoint, a number
+    value: 100 // the value at datapoint(x, y)
+  };
+  var data = [
+    dataPoint, dataPoint, dataPoint, dataPoint
+  ]
+  ```
+* `clickDrawable` (default: `false`)
 
-* `moveDrawable`
+  add a datapoint when click
 
-* `drawValue`
+* `moveDrawable` (default: `false`)
+
+  add a datapoint when mousemove or touchmove
+
+* `drawValue`  (default: `1`)
+
+  the value of datapoint when click or move
 
 ### Methods
-* `addData`
 * `getValueAt`
 * `getData`
 * `getDataURL`
 * `repaint`
 
+For further details, see [heatmap.js' API documentation](https://www.patrick-wied.at/static/heatmapjs/docs.html)
+
 ### Events
 * `change`
+
+  triggered when data changes due to a click or move and The first parameter emit is the latest dataset
 
 ## Local development
 
