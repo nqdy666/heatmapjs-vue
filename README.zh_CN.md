@@ -23,7 +23,7 @@
 ## 安装
 
 #### NPM
-Install the package.
+安装npm包.
 
 ```bash
 $ npm install heatmapjs-vue
@@ -151,7 +151,7 @@ $ chmod a+x scripts/build
 $ npm run release
 $ git push --follow-tags origin dev && npm publish
 ```
-如果您使用的是windows系统，您不能直接执行`npm run release`，您需要安装git bash软件，然后使用git bash执行命令`./scripts/build`和' npm运行`release:only`。
+如果您使用的是windows系统，您不能直接执行`npm run release`，您需要安装git bash软件，然后使用git bash执行命令`./scripts/build`和`npm run release:only`。
 
 文档发布
 ```bash
@@ -162,7 +162,7 @@ $ npm run docs-publish
 如果您使用windows系统，您不能直接执行`npm run docs-publish`，您需要安装git bash软件，然后使用git bash执行`./scripts/docs-publish`命令。
 
 ## 捐赠
-如果你觉得有用，你可以请我们喝杯咖啡。
+如果你觉得有用，您可以请我们喝杯咖啡。
 
 <img width="650" src="https://raw.githubusercontent.com/nqdy666/heatmapjs-vue/dev/docs/assets/images/qrcode-donation.png" alt="donation">
 
