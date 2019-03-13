@@ -1,5 +1,7 @@
 # heatmapjs-vue
 
+[![license](https://img.shields.io/github/license/nqdy666/heatmapjs-vue.svg)](https://github.com/nqdy666/heatmapjs-vue)
+
 > heatmapjs component for Vue.js.
 
 > [CN 中文版](./README.zh_CN.md)
