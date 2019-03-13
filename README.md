@@ -1,5 +1,7 @@
 # heatmapjs-vue
 
+[![version](https://img.shields.io/npm/v/heatmapjs-vue.svg)](https://www.npmjs.com/package/heatmapjs-vue)
+[![download](https://img.shields.io/npm/dm/heatmapjs-vue.svg)](https://www.npmjs.com/package/heatmapjs-vue)
 [![license](https://img.shields.io/github/license/nqdy666/heatmapjs-vue.svg)](https://github.com/nqdy666/heatmapjs-vue/blob/dev/LICENSE)
 
 > heatmapjs component for Vue.js.
