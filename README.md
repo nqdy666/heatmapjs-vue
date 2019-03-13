@@ -166,6 +166,6 @@ If you find it useful, you can buy us a cup of coffee.
 
 ## License
 
-[MIT](https://github.com/nianqin/heatmapjs-vue/blob/master/LICENSE.md)
+[MIT](https://github.com/nianqin/heatmapjs-vue/blob/dev/LICENSE.md)
 
 Copyright (c) 2019-present, Qin Nian
