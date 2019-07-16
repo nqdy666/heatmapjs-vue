@@ -145,8 +145,8 @@ $ npm run docs-dev
 
 publish
 ```bash
-$ npm install -g babel-cli
-$ npm i rollup -g
+$ npm install -g babel-cli@6.26.0
+$ npm install -g rollup@0.67.3
 $ chmod a+x scripts/build
 $ npm run release
 $ git push --follow-tags origin dev && npm publish
